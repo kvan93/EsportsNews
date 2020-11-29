@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EsportsNews</string>
+    <string name="fav_delete">Your favorite has been deleted!</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity"
+    android:background="@drawable/background"
+    android:id="@+id/favorite_layout"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons_favorite"
+        android:layout_weight="1"
+        >
+        <Button
+            android:text="Home"
+            app:strokeColor="@color/white"
+            app:cornerRadius="100px"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+            android:id="@+id/Home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="50dp"
+
+
+            ></Button>
+
+        <Button
+            android:text="Clear All"
+            app:strokeColor="@color/white"
+            app:cornerRadius="100px"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/clear_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+
+
+            app:icon="@drawable/ic_baseline_delete_forever_24"
+            > </Button>
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_favorites"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:layout_below="@id/buttons_favorite"
+        />
+
+
+</RelativeLayout>
